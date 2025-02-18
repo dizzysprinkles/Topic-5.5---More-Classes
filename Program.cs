@@ -6,10 +6,14 @@
         {
             Die die1, die2;
             die1 = new Die();
-            die2 = new Die();
+            die2 = new Die(-20);
             
 
-            Console.WriteLine(die1.Roll);
+            Console.WriteLine(die2);
+            die2.DrawDie();
+            die1.RollDie();
+            Console.WriteLine(die1);
+            die1.DrawDie();
         }
     }
 }
